@@ -1,6 +1,6 @@
 # livrables/
 
-Ce dossier contient tous les livrables produits par Claude pour Yoni : sites web, applications, contenus Youtube, livrables pour le cabinet Chatflow, et livrables pour l'Apreneur Académie.
+Ce dossier contient tous les livrables produits par Claude pour Yoni : livrables de courtage immobilier, sites web pour clients, et applications/automatisations.
 
 ## Règle d'or
 
@@ -13,11 +13,9 @@ Ne jamais mélanger les deux. Un document que Yoni envoie pour analyse va dans `
 
 | Dossier | Contenu |
 |---------|---------|
-| `sites-web/` | Sites internet (landing pages, sites vitrine, etc.) |
+| `courtage/` | Fiches biens, argumentaires, supports de prospection, docs licence |
+| `sites-web/` | Sites internet pour clients (landing pages, sites vitrine, etc.) |
 | `applications/` | Outils, scripts, automatisations |
-| `Youtube/` | Briefs vidéos, scripts, hooks, calendrier éditorial |
-| `cabinet/` | Livrables pour le cabinet de conseil Chatflow |
-| `ecole/` | Livrables pour l'Apreneur Académie |
 
 ## Convention de nommage des projets
 
@@ -28,9 +26,8 @@ livrables/<thème>/<AAAA-MM-JJ>-<nom-du-projet-en-kebab-case>/
 ```
 
 Exemples :
-- `livrables/sites-web/2026-09-16-landing-page-courtage/`
-- `livrables/cabinet/2026-09-16-audit-processus-chatflow/`
-- `livrables/Youtube/2026-09-16-calendrier-editorial-q4/`
+- `livrables/sites-web/2026-09-16-landing-page-client-x/`
+- `livrables/courtage/2026-09-16-fiche-bien-rehavia/`
 
 Pourquoi la date en préfixe : ça permet de trier les projets chronologiquement et de retrouver facilement la dernière version d'un livrable récurrent, sans avoir à ouvrir chaque dossier.
 
