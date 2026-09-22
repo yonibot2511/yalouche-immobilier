@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yalouche Immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/lucide-static@0.460.0/font/lucide.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand" data-i18n="brand">Yalouche Immobilier</a>
+    <nav class="nav-desktop">
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#biens" data-i18n="nav.properties">Biens à la une</a>
+      <a href="#confiance" data-i18n="nav.why">Pourquoi moi</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <div class="lang-switch" id="lang-switch-header" role="group"></div>
+      <button type="button" class="menu-btn" id="menu-toggle" aria-label="Menu"><i class="icon-menu" id="menu-icon"></i></button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" hidden>
+    <a href="#about" data-i18n="nav.about">À propos</a>
+    <a href="#biens" data-i18n="nav.properties">Biens à la une</a>
+    <a href="#confiance" data-i18n="nav.why">Pourquoi moi</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-media">
+    <img id="hero-img" src="images/hero.jpg" alt="" onerror="this.style.display='none'">
+    <div class="hero-placeholder">Photo d'en-tête — déposez images/hero.jpg</div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div class="eyebrow eyebrow-hero" data-reveal><span class="eyebrow-bar"></span><span data-i18n="hero.eyebrow">Courtage immobilier à Jérusalem</span></div>
+      <h1 data-reveal data-i18n="hero.title">Votre prochain bien à Jérusalem, avec un accompagnement sur mesure</h1>
+      <p class="hero-subtitle" data-reveal data-i18n="hero.subtitle">Achat, vente et location à Jérusalem.</p>
+      <div class="hero-ctas" data-reveal>
+        <a href="#contact" class="btn btn-light" data-i18n="hero.ctaPrimary">Prendre contact<span class="arrow" data-i18n="arrow">→</span></a>
+        <a href="#biens" class="btn btn-outline" data-i18n="hero.ctaSecondary">Voir les biens</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-media" data-reveal>
+      <div class="about-media-frame"></div>
+      <div class="about-media-photo">
+        <img id="portrait-img" src="images/portrait.jpg" alt="" onerror="this.style.display='none'">
+        <div class="hero-placeholder">Portrait professionnel — déposez images/portrait.jpg</div>
+      </div>
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow" data-reveal><span class="eyebrow-bar"></span><span data-i18n="about.eyebrow">À propos</span></div>
+      <h2 data-reveal data-i18n="about.title">Une approche attentive, entièrement consacrée à Jérusalem</h2>
+      <p data-reveal data-i18n="about.p1"></p>
+      <p data-reveal data-i18n="about.p2"></p>
+      <div class="status-box" data-reveal>
+        <i class="icon-graduation-cap"></i>
+        <div>
+          <div class="status-label" data-i18n="about.statusLabel">Parcours professionnel</div>
+          <div class="status-text" data-i18n="about.status"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="biens">
+  <div class="section-wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow" data-reveal><span class="eyebrow-bar"></span><span data-i18n="props.eyebrow">Sélection</span></div>
+        <h2 data-reveal data-i18n="props.title">Biens à la une</h2>
+      </div>
+      <p class="section-subtitle" data-reveal data-i18n="props.subtitle"></p>
+    </div>
+    <div class="properties-grid" id="properties-grid"></div>
+  </div>
+</section>
+
+<section id="confiance">
+  <div class="section-wrap">
+    <div class="why-head">
+      <div class="eyebrow eyebrow-center" data-reveal><span class="eyebrow-bar"></span><span data-i18n="why.eyebrow">Mon engagement</span><span class="eyebrow-bar"></span></div>
+      <h2 data-reveal data-i18n="why.title">Pourquoi me faire confiance</h2>
+    </div>
+    <div class="why-grid" id="why-grid"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="eyebrow" data-reveal><span class="eyebrow-bar"></span><span data-i18n="contact.eyebrow">Contact</span></div>
+      <h2 data-reveal data-i18n="contact.title">Parlons de votre projet</h2>
+      <p data-reveal data-i18n="contact.subtitle"></p>
+      <div class="contact-list" data-reveal>
+        <a id="tel-link" href="#" class="contact-row">
+          <i class="icon-phone"></i>
+          <span><span class="contact-row-label" data-i18n="contact.phoneLabel">Téléphone</span><span id="phone-display" class="contact-row-value" dir="ltr"></span></span>
+        </a>
+        <a id="mail-link" href="#" class="contact-row">
+          <i class="icon-mail"></i>
+          <span><span class="contact-row-label" data-i18n="contact.emailLabel">Email</span><span id="email-display" class="contact-row-value" dir="ltr"></span></span>
+        </a>
+        <div class="contact-row contact-row-static">
+          <i class="icon-map-pin"></i>
+          <span><span class="contact-row-label" data-i18n="contact.areaLabel">Secteur</span><span class="contact-row-value" data-i18n="contact.area"></span></span>
+        </div>
+      </div>
+      <a id="wa-link" href="#" target="_blank" rel="noopener" class="btn btn-dark" data-reveal>
+        <i class="icon-message-circle"></i><span data-i18n="contact.whatsapp">Contacter sur WhatsApp</span>
+      </a>
+    </div>
+    <div class="contact-form-card" data-reveal>
+      <div id="contact-sent" class="sent-panel" hidden>
+        <div class="sent-check"><i class="icon-check"></i></div>
+        <p data-i18n="contact.sent"></p>
+        <button type="button" id="contact-again" class="link-btn" data-i18n="contact.again">Envoyer un autre message</button>
+      </div>
+      <form id="contact-form">
+        <label>
+          <span class="field-label" data-i18n="contact.name">Nom complet</span>
+          <input name="name" required autocomplete="name">
+        </label>
+        <div class="field-row">
+          <label>
+            <span class="field-label" data-i18n="contact.email">Email</span>
+            <input name="email" type="email" required autocomplete="email" dir="ltr">
+          </label>
+          <label>
+            <span class="field-label" data-i18n="contact.phone">Téléphone</span>
+            <input name="phone" type="tel" autocomplete="tel" dir="ltr">
+          </label>
+        </div>
+        <label>
+          <span class="field-label" data-i18n="contact.message">Votre message</span>
+          <textarea name="message" id="contact-message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-solid" data-i18n="contact.send">Envoyer le message<span class="arrow" data-i18n="arrow">→</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name" data-i18n="brand">Yalouche Immobilier</div>
+        <div class="footer-tagline" data-i18n="footer.tagline"></div>
+      </div>
+      <div>
+        <div class="footer-lang-label" data-i18n="footer.langLabel">Langue</div>
+        <div class="lang-switch" id="lang-switch-footer" role="group"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.disclaimer"></span>
+      <span><span id="footer-year"></span> <span data-i18n="brand"></span>. <span data-i18n="footer.rights"></span></span>
+    </div>
+  </div>
+</footer>
+
+<a id="wa-float" href="#" target="_blank" rel="noopener" class="wa-float"><i class="icon-message-circle"></i></a>
+
+<script src="script.js"></script>
+</body>
+</html>
